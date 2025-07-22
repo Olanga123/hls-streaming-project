@@ -1,0 +1,7 @@
+ HLS Streaming Project – All Commands
+1. FFmpeg Command to Convert MP4 to HLS
+ffmpeg -i abb.mp4 -codec: copy -start_number 0 -hls_time 10 -hls_list_size 0 -f hls index.m3u8
+2. Run Python Script
+python convert_to_hls.py
+3.python -m http.server 8000
+4.ngrok http 8000
